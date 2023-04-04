@@ -4,7 +4,7 @@ import (
 "github.com/gin-gonic/gin"
 "github.com/gin-gonic/gin/binding"
 "mango-admin/models"
-"mango-admin/pkg/sdk/pkg"
+"mango-admin/pkg"
 "mango-admin/utils"
 "net/http"
 )

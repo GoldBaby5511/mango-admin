@@ -3,7 +3,7 @@ package models
 import (
 	"gorm.io/gorm"
 
-	"mango-admin/pkg/sdk/pkg"
+	"mango-admin/pkg"
 )
 
 // BaseUser 密码登录基础用户

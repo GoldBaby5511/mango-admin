@@ -7,7 +7,7 @@ import (
 	dto2 "mango-admin/app/jobs/service/dto"
 	"mango-admin/common/actions"
 	"mango-admin/common/middleware"
-	jwt "mango-admin/pkg/sdk/pkg/jwtauth"
+	jwt "mango-admin/pkg/jwtauth"
 )
 
 func init() {

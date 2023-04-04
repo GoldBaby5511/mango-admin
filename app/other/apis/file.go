@@ -10,8 +10,8 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
 	"mango-admin/pkg/sdk/api"
-	"mango-admin/pkg/sdk/pkg"
-	"mango-admin/pkg/sdk/pkg/utils"
+	"mango-admin/pkg"
+	"mango-admin/pkg/utils"
 
 	"mango-admin/common/file_store"
 )

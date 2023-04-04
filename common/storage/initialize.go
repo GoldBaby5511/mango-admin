@@ -12,7 +12,7 @@ import (
 
 	"mango-admin/pkg/sdk"
 	"mango-admin/pkg/sdk/config"
-	"mango-admin/pkg/sdk/pkg/captcha"
+	"mango-admin/pkg/captcha"
 )
 
 // Setup 配置storage组件

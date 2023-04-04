@@ -5,7 +5,7 @@ import (
 	"mango-admin/common/middleware"
 
 	"github.com/gin-gonic/gin"
-	jwt "mango-admin/pkg/sdk/pkg/jwtauth"
+	jwt "mango-admin/pkg/jwtauth"
 )
 
 func init() {

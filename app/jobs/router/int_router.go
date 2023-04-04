@@ -1,7 +1,7 @@
 package router
 
 import (
-	//"mango-admin/pkg/sdk/pkg"
+	//"mango-admin/pkg"
 	"os"
 
 	"github.com/gin-gonic/gin"

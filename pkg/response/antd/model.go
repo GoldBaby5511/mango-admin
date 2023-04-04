@@ -3,7 +3,7 @@ package antd
 import (
 	"fmt"
 
-	resp "mango-admin/pkg/sdk/pkg/response"
+	resp "mango-admin/pkg/response"
 )
 
 const (

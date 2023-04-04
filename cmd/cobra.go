@@ -3,7 +3,7 @@ package cmd
 import (
 	"errors"
 	"fmt"
-	"mango-admin/pkg/sdk/pkg"
+	"mango-admin/pkg"
 	"mango-admin/cmd/app"
 	"mango-admin/common/global"
 	"os"

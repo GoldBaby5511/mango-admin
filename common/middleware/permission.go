@@ -7,8 +7,8 @@ import (
 	"github.com/gin-gonic/gin"
 	"mango-admin/pkg/sdk"
 	"mango-admin/pkg/sdk/api"
-	"mango-admin/pkg/sdk/pkg/jwtauth"
-	"mango-admin/pkg/sdk/pkg/response"
+	"mango-admin/pkg/jwtauth"
+	"mango-admin/pkg/response"
 )
 
 // AuthCheckRole 权限检查中间件

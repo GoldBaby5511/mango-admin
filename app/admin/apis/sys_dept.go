@@ -4,10 +4,10 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
 	"mango-admin/app/admin/models"
+	"mango-admin/pkg"
+	"mango-admin/pkg/jwtauth/user"
+	_ "mango-admin/pkg/response"
 	"mango-admin/pkg/sdk/api"
-	"mango-admin/pkg/sdk/pkg"
-	"mango-admin/pkg/sdk/pkg/jwtauth/user"
-	_ "mango-admin/pkg/sdk/pkg/response"
 
 	"mango-admin/app/admin/service"
 	"mango-admin/app/admin/service/dto"

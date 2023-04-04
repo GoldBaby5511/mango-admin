@@ -7,11 +7,11 @@ import (
 	"strings"
 	"time"
 
+	"mango-admin/pkg"
+	mycasbin "mango-admin/pkg/casbin"
 	log "mango-admin/pkg/logger"
 	"mango-admin/pkg/sdk"
 	toolsConfig "mango-admin/pkg/sdk/config"
-	"mango-admin/pkg/sdk/pkg"
-	mycasbin "mango-admin/pkg/sdk/pkg/casbin"
 	toolsDB "mango-admin/pkg/tools/database"
 
 	// . "mango-admin/pkg/tools/gorm/logger"

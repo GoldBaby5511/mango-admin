@@ -5,7 +5,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"mango-admin/pkg/sdk"
-	jwt "mango-admin/pkg/sdk/pkg/jwtauth"
+	jwt "mango-admin/pkg/jwtauth"
 )
 
 const (

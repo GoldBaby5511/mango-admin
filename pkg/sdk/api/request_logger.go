@@ -7,7 +7,7 @@ import (
 
 	"mango-admin/pkg/logger"
 	"mango-admin/pkg/sdk"
-	"mango-admin/pkg/sdk/pkg"
+	"mango-admin/pkg"
 )
 
 type loggerKey struct{}

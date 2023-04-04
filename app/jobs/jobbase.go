@@ -12,8 +12,8 @@ import (
 
 	"github.com/robfig/cron/v3"
 
-	"mango-admin/pkg/sdk/pkg"
-	"mango-admin/pkg/sdk/pkg/cronjob"
+	"mango-admin/pkg"
+	"mango-admin/pkg/cronjob"
 )
 
 var timeFormat = "2006-01-02 15:04:05"

@@ -4,7 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"mango-admin/app/admin/apis"
 	"mango-admin/app/other/apis/tools"
-	jwt "mango-admin/pkg/sdk/pkg/jwtauth"
+	jwt "mango-admin/pkg/jwtauth"
 )
 
 func init() {

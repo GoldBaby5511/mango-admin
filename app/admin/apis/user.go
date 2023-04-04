@@ -5,7 +5,7 @@ import (
 	"mango-admin/app/admin/service/dto"
 
 	"github.com/gin-gonic/gin"
-	"mango-admin/pkg/sdk/pkg/response"
+	"mango-admin/pkg/response"
 )
 
 type User struct {

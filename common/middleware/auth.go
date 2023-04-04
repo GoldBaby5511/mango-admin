@@ -5,7 +5,7 @@ import (
 
 	"mango-admin/common/middleware/handler"
 	"mango-admin/pkg/sdk/config"
-	jwt "mango-admin/pkg/sdk/pkg/jwtauth"
+	jwt "mango-admin/pkg/jwtauth"
 )
 
 // AuthInit jwt验证new

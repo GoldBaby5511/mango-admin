@@ -3,7 +3,7 @@ package models
 import (
 	"errors"
 	"gorm.io/gorm"
-	"mango-admin/pkg/sdk/pkg"
+	"mango-admin/pkg"
 
 	log "mango-admin/pkg/logger"
 	"mango-admin/pkg/sdk/config"

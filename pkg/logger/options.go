@@ -20,6 +20,53 @@ type Options struct {
 	Context context.Context
 	// Name logger name
 	Name string
+
+	driver string
+	path   string
+	level  string
+	stdout string
+	cap    uint
+}
+
+type options struct {
+	driver string
+	path   string
+	level  string
+	stdout string
+	cap    uint
+}
+
+func setDefault() Options {
+	return Options{
+		driver: "default",
+		path:   "temp/logs",
+		level:  "warn",
+		stdout: "default",
+	}
+}
+
+func WithType(s string) Option {
+	return func(o *Options) {
+		o.driver = s
+	}
+}
+
+func WithPath(s string) Option {
+	return func(o *Options) {
+		o.path = s
+	}
+}
+
+func WithStdout(s string) Option {
+	return func(o *Options) {
+		o.stdout = s
+	}
+}
+
+func WithCap(n uint) Option {
+	return func(o *Options) {
+		o.cap = n
+	}
 }
 
 // WithFields set default fields for the logger

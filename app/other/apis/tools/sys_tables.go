@@ -6,8 +6,8 @@ import (
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
 	"mango-admin/pkg/sdk/api"
-	"mango-admin/pkg/sdk/pkg"
-	_ "mango-admin/pkg/sdk/pkg/response"
+	"mango-admin/pkg"
+	_ "mango-admin/pkg/response"
 
 	"mango-admin/app/other/models/tools"
 )

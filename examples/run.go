@@ -9,7 +9,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"gorm.io/gorm"
 
-	myCasbin "mango-admin/pkg/sdk/pkg/casbin"
+	myCasbin "mango-admin/pkg/casbin"
 	"gorm.io/driver/mysql"
 )
 

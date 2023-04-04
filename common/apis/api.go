@@ -9,8 +9,8 @@ import (
 	"gorm.io/gorm"
 	"mango-admin/pkg/logger"
 	"mango-admin/pkg/sdk/api"
-	"mango-admin/pkg/sdk/pkg"
-	"mango-admin/pkg/sdk/pkg/response"
+	"mango-admin/pkg"
+	"mango-admin/pkg/response"
 
 	"mango-admin/common/service"
 )

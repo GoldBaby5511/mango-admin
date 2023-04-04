@@ -3,8 +3,8 @@ package router
 import (
 	"github.com/gin-gonic/gin"
 	_ "github.com/gin-gonic/gin"
-	"mango-admin/pkg/sdk/pkg/jwtauth"
-	jwt "mango-admin/pkg/sdk/pkg/jwtauth"
+	"mango-admin/pkg/jwtauth"
+	jwt "mango-admin/pkg/jwtauth"
 )
 
 var (

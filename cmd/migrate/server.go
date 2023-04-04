@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"mango-admin/pkg/sdk"
-	"mango-admin/pkg/sdk/pkg"
+	"mango-admin/pkg"
 
 	"mango-admin/pkg/config/source/file"
 	"github.com/spf13/cobra"

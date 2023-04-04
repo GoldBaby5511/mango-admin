@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	"mango-admin/pkg/sdk/pkg/response"
+	"mango-admin/pkg/response"
 )
 
 func CustomRecovery() gin.HandlerFunc {

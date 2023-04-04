@@ -4,12 +4,12 @@ import (
 	"errors"
 
 	"github.com/gin-gonic/gin"
-	log "mango-admin/pkg/logger"
 	"gorm.io/gorm"
+	"mango-admin/pkg"
+	"mango-admin/pkg/jwtauth/user"
+	log "mango-admin/pkg/logger"
+	"mango-admin/pkg/response"
 	"mango-admin/pkg/sdk/config"
-	"mango-admin/pkg/sdk/pkg"
-	"mango-admin/pkg/sdk/pkg/jwtauth/user"
-	"mango-admin/pkg/sdk/pkg/response"
 )
 
 type DataPermission struct {

@@ -1,11 +1,11 @@
 package config
 
-import "mango-admin/pkg/sdk/pkg/logger"
+import "mango-admin/pkg/logger"
 
 type Logger struct {
 	Type      string
 	Path      string
-	Level     string
+	Level     logger.Level
 	Stdout    string
 	EnabledDB bool
 	Cap       uint

@@ -13,7 +13,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"mango-admin/pkg/sdk/api"
 	"mango-admin/pkg/sdk/config"
-	"mango-admin/pkg/sdk/pkg"
+	"mango-admin/pkg"
 
 	"mango-admin/app/other/models/tools"
 )

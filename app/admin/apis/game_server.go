@@ -12,7 +12,7 @@ import (
 	"github.com/gin-gonic/gin/binding"
 	"mango-admin/pkg/sdk"
 	"mango-admin/pkg/sdk/api"
-	"mango-admin/pkg/sdk/pkg/jwtauth/user"
+	"mango-admin/pkg/jwtauth/user"
 )
 
 type GameServerApi struct {

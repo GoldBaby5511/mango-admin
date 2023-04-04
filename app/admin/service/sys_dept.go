@@ -5,7 +5,7 @@ import (
 	"mango-admin/app/admin/models"
 
 	log "mango-admin/pkg/logger"
-	"mango-admin/pkg/sdk/pkg"
+	"mango-admin/pkg"
 
 	"gorm.io/gorm"
 

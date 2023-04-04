@@ -14,9 +14,9 @@ import (
 	"github.com/shirou/gopsutil/v3/disk"
 	"github.com/shirou/gopsutil/v3/host"
 	"github.com/shirou/gopsutil/v3/mem"
+	"mango-admin/pkg"
+	_ "mango-admin/pkg/response"
 	"mango-admin/pkg/sdk/api"
-	"mango-admin/pkg/sdk/pkg"
-	_ "mango-admin/pkg/sdk/pkg/response"
 )
 
 const (

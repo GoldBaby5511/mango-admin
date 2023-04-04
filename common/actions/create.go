@@ -5,9 +5,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"mango-admin/pkg/sdk/api"
-	"mango-admin/pkg/sdk/pkg"
-	"mango-admin/pkg/sdk/pkg/jwtauth/user"
-	"mango-admin/pkg/sdk/pkg/response"
+	"mango-admin/pkg"
+	"mango-admin/pkg/jwtauth/user"
+	"mango-admin/pkg/response"
 
 	"mango-admin/common/dto"
 	"mango-admin/common/models"

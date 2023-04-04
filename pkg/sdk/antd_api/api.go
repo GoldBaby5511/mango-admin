@@ -12,8 +12,8 @@ import (
 	"github.com/gin-gonic/gin"
 	"mango-admin/pkg/logger"
 	"mango-admin/pkg/sdk/api"
-	"mango-admin/pkg/sdk/pkg"
-	"mango-admin/pkg/sdk/pkg/response/antd"
+	"mango-admin/pkg"
+	"mango-admin/pkg/response/antd"
 	"gorm.io/gorm"
 )
 

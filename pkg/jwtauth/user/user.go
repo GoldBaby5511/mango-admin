@@ -5,8 +5,8 @@ import (
 
 	"github.com/gin-gonic/gin"
 
-	"mango-admin/pkg/sdk/pkg"
-	jwt "mango-admin/pkg/sdk/pkg/jwtauth"
+	"mango-admin/pkg"
+	jwt "mango-admin/pkg/jwtauth"
 )
 
 func ExtractClaims(c *gin.Context) jwt.MapClaims {

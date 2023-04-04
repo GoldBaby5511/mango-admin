@@ -11,7 +11,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/websocket"
 
-	"mango-admin/pkg/sdk/pkg"
+	"mango-admin/pkg"
 )
 
 // Manager 所有 websocket 信息

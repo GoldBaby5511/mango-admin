@@ -17,8 +17,8 @@ import (
 	"mango-admin/pkg/sdk"
 	"mango-admin/pkg/sdk/api"
 	"mango-admin/pkg/sdk/config"
-	"mango-admin/pkg/sdk/pkg"
-	"mango-admin/pkg/sdk/pkg/jwtauth/user"
+	"mango-admin/pkg"
+	"mango-admin/pkg/jwtauth/user"
 
 	"mango-admin/common/global"
 )

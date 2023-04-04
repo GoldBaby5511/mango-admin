@@ -4,7 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
 	"mango-admin/pkg/sdk/api"
-	"mango-admin/pkg/sdk/pkg/jwtauth/user"
+	"mango-admin/pkg/jwtauth/user"
 
 	"mango-admin/app/admin/models"
 	"mango-admin/app/admin/service"

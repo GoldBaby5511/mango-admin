@@ -13,11 +13,11 @@ import (
 	"mango-admin/pkg/sdk"
 	"mango-admin/pkg/sdk/api"
 	"mango-admin/pkg/sdk/config"
-	"mango-admin/pkg/sdk/pkg"
-	"mango-admin/pkg/sdk/pkg/captcha"
-	jwt "mango-admin/pkg/sdk/pkg/jwtauth"
-	"mango-admin/pkg/sdk/pkg/jwtauth/user"
-	"mango-admin/pkg/sdk/pkg/response"
+	"mango-admin/pkg"
+	"mango-admin/pkg/captcha"
+	jwt "mango-admin/pkg/jwtauth"
+	"mango-admin/pkg/jwtauth/user"
+	"mango-admin/pkg/response"
 
 	"mango-admin/common/global"
 )

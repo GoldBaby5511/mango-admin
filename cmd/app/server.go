@@ -5,8 +5,8 @@ import (
 	"errors"
 	"fmt"
 	"github.com/spf13/cobra"
-	"mango-admin/pkg/sdk/pkg"
-	"mango-admin/pkg/sdk/pkg/utils"
+	"mango-admin/pkg"
+	"mango-admin/pkg/utils"
 	"text/template"
 )
 

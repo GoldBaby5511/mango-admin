@@ -3,9 +3,9 @@ package tools
 import (
 	"errors"
 	"github.com/gin-gonic/gin"
+	"mango-admin/pkg"
+	_ "mango-admin/pkg/response"
 	"mango-admin/pkg/sdk/config"
-	"mango-admin/pkg/sdk/pkg"
-	_ "mango-admin/pkg/sdk/pkg/response"
 
 	"mango-admin/app/other/models/tools"
 )

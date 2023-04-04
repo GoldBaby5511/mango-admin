@@ -2,9 +2,9 @@ package router
 
 import (
 	"github.com/gin-gonic/gin"
-	jwt "mango-admin/pkg/sdk/pkg/jwtauth"
 	"mango-admin/app/admin/apis"
 	"mango-admin/common/middleware"
+	jwt "mango-admin/pkg/jwtauth"
 )
 
 func init() {

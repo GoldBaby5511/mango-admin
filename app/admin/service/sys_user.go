@@ -7,7 +7,7 @@ import (
 
 	"gorm.io/gorm"
 	log "mango-admin/pkg/logger"
-	"mango-admin/pkg/sdk/pkg"
+	"mango-admin/pkg"
 	"mango-admin/pkg/sdk/service"
 
 	"mango-admin/common/actions"

@@ -4,7 +4,7 @@ import (
 	"errors"
 
 	"mango-admin/pkg/sdk/config"
-	"mango-admin/pkg/sdk/pkg"
+	"mango-admin/pkg"
 	"gorm.io/gorm"
 )
 
