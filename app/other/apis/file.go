@@ -8,12 +8,12 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/sdk/api"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/utils"
 	"github.com/google/uuid"
+	"mango-admin/pkg/sdk/api"
+	"mango-admin/pkg/sdk/pkg"
+	"mango-admin/pkg/sdk/pkg/utils"
 
-	"go-admin/common/file_store"
+	"mango-admin/common/file_store"
 )
 
 type FileResponse struct {

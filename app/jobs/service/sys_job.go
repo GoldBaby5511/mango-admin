@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/go-admin-team/go-admin-core/sdk/service"
 	"github.com/robfig/cron/v3"
+	"mango-admin/pkg/sdk/service"
 
-	"go-admin/app/jobs"
-	"go-admin/app/jobs/models"
-	"go-admin/common/dto"
+	"mango-admin/app/jobs"
+	"mango-admin/app/jobs/models"
+	"mango-admin/common/dto"
 )
 
 type SysJob struct {

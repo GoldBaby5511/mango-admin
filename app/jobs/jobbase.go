@@ -2,18 +2,18 @@ package jobs
 
 import (
 	"fmt"
-	models2 "go-admin/app/jobs/models"
+	models2 "mango-admin/app/jobs/models"
 	"sync"
 	"time"
 
-	log "github.com/go-admin-team/go-admin-core/logger"
-	"github.com/go-admin-team/go-admin-core/sdk"
+	log "mango-admin/pkg/logger"
 	"gorm.io/gorm"
+	"mango-admin/pkg/sdk"
 
 	"github.com/robfig/cron/v3"
 
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/cronjob"
+	"mango-admin/pkg/sdk/pkg"
+	"mango-admin/pkg/sdk/pkg/cronjob"
 )
 
 var timeFormat = "2006-01-02 15:04:05"

@@ -5,13 +5,13 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	log "github.com/go-admin-team/go-admin-core/logger"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/response"
 	"gorm.io/gorm"
+	log "mango-admin/pkg/logger"
+	"mango-admin/pkg/sdk/pkg"
+	"mango-admin/pkg/sdk/pkg/response"
 
-	"go-admin/common/dto"
-	"go-admin/common/models"
+	"mango-admin/common/dto"
+	"mango-admin/common/models"
 )
 
 // IndexAction 通用查询动作

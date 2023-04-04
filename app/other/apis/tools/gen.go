@@ -3,19 +3,19 @@ package tools
 import (
 	"bytes"
 	"fmt"
-	"go-admin/app/admin/service"
-	"go-admin/app/admin/service/dto"
+	"mango-admin/app/admin/service"
+	"mango-admin/app/admin/service/dto"
 	"strconv"
 	"strings"
 	"text/template"
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/sdk/api"
-	"github.com/go-admin-team/go-admin-core/sdk/config"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
+	"mango-admin/pkg/sdk/api"
+	"mango-admin/pkg/sdk/config"
+	"mango-admin/pkg/sdk/pkg"
 
-	"go-admin/app/other/models/tools"
+	"mango-admin/app/other/models/tools"
 )
 
 type Gen struct {
@@ -83,7 +83,7 @@ func (e Gen) Preview(c *gin.Context) {
 		return
 	}
 
-	tab, _ := table.Get(db,false)
+	tab, _ := table.Get(db, false)
 	var b1 bytes.Buffer
 	err = t1.Execute(&b1, tab)
 	var b2 bytes.Buffer
@@ -129,7 +129,7 @@ func (e Gen) GenCode(c *gin.Context) {
 	}
 
 	table.TableId = id
-	tab, _ := table.Get(db,false)
+	tab, _ := table.Get(db, false)
 
 	e.NOActionsGen(c, tab)
 
@@ -155,7 +155,7 @@ func (e Gen) GenApiToFile(c *gin.Context) {
 	}
 
 	table.TableId = id
-	tab, _ := table.Get(db,false)
+	tab, _ := table.Get(db, false)
 	e.genApiToFile(c, tab)
 
 	e.OK("", "Code generated successfully！")
@@ -302,7 +302,7 @@ func (e Gen) GenMenuAndApi(c *gin.Context) {
 	}
 
 	table.TableId = id
-	tab, _ := table.Get(e.Orm,true)
+	tab, _ := table.Get(e.Orm, true)
 	tab.MLTBName = strings.Replace(tab.TBName, "_", "-", -1)
 
 	Mmenu := dto.SysMenuInsertReq{}

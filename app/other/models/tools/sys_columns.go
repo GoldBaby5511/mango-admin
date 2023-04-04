@@ -1,8 +1,8 @@
 package tools
 
 import (
-	"go-admin/app/admin/models"
 	"gorm.io/gorm"
+	"mango-admin/app/admin/models"
 )
 
 type SysColumns struct {

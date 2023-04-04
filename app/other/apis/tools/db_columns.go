@@ -2,10 +2,10 @@ package tools
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
-	_ "github.com/go-admin-team/go-admin-core/sdk/pkg/response"
+	"mango-admin/pkg/sdk/pkg"
+	_ "mango-admin/pkg/sdk/pkg/response"
 
-	"go-admin/app/other/models/tools"
+	"mango-admin/app/other/models/tools"
 )
 
 // GetDBColumnList 分页列表数据

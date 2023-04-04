@@ -1,6 +1,6 @@
 package dto
 
-import "go-admin/common/dto"
+import "mango-admin/common/dto"
 
 type GameIdListReq struct {
 	dto.Pagination `search:"-"`

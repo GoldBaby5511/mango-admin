@@ -3,14 +3,14 @@ package version
 import (
 	"fmt"
 	"github.com/spf13/cobra"
-	"go-admin/common/global"
+	"mango-admin/common/global"
 )
 
 var (
 	StartCmd = &cobra.Command{
 		Use:     "version",
 		Short:   "Get version info",
-		Example: "go-admin version",
+		Example: "mango-admin version",
 		PreRun: func(cmd *cobra.Command, args []string) {
 
 		},

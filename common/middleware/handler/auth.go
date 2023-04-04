@@ -2,24 +2,24 @@ package handler
 
 import (
 	"fmt"
-	"go-admin/app/admin/models"
-	"go-admin/common"
+	"mango-admin/app/admin/models"
+	"mango-admin/common"
 	"net/http"
 
-	gaConfig "go-admin/config"
+	gaConfig "mango-admin/config"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/sdk"
-	"github.com/go-admin-team/go-admin-core/sdk/api"
-	"github.com/go-admin-team/go-admin-core/sdk/config"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/captcha"
-	jwt "github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth/user"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/response"
 	"github.com/mssola/user_agent"
+	"mango-admin/pkg/sdk"
+	"mango-admin/pkg/sdk/api"
+	"mango-admin/pkg/sdk/config"
+	"mango-admin/pkg/sdk/pkg"
+	"mango-admin/pkg/sdk/pkg/captcha"
+	jwt "mango-admin/pkg/sdk/pkg/jwtauth"
+	"mango-admin/pkg/sdk/pkg/jwtauth/user"
+	"mango-admin/pkg/sdk/pkg/response"
 
-	"go-admin/common/global"
+	"mango-admin/common/global"
 )
 
 func PayloadFunc(data interface{}) jwt.MapClaims {

@@ -4,11 +4,11 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/sdk"
-	"github.com/go-admin-team/go-admin-core/sdk/api"
+	"mango-admin/pkg/sdk"
+	"mango-admin/pkg/sdk/api"
 
-	"go-admin/app/jobs/service"
-	"go-admin/common/dto"
+	"mango-admin/app/jobs/service"
+	"mango-admin/common/dto"
 )
 
 type SysJob struct {

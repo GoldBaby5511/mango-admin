@@ -5,11 +5,11 @@ import (
 	"errors"
 	"time"
 
-	log "github.com/go-admin-team/go-admin-core/logger"
-	"github.com/go-admin-team/go-admin-core/sdk"
-	"github.com/go-admin-team/go-admin-core/storage"
+	log "mango-admin/pkg/logger"
+	"mango-admin/pkg/sdk"
+	"mango-admin/pkg/storage"
 
-	"go-admin/common/models"
+	"mango-admin/common/models"
 )
 
 type SysLoginLog struct {

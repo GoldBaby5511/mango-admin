@@ -2,17 +2,17 @@ package service
 
 import (
 	"errors"
-	"github.com/go-admin-team/go-admin-core/sdk/config"
 	"gorm.io/gorm/clause"
+	"mango-admin/pkg/sdk/config"
 
 	"github.com/casbin/casbin/v2"
 
-	"github.com/go-admin-team/go-admin-core/sdk/service"
 	"gorm.io/gorm"
+	"mango-admin/pkg/sdk/service"
 
-	"go-admin/app/admin/models"
-	"go-admin/app/admin/service/dto"
-	cDto "go-admin/common/dto"
+	"mango-admin/app/admin/models"
+	"mango-admin/app/admin/service/dto"
+	cDto "mango-admin/common/dto"
 )
 
 type SysRole struct {

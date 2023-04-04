@@ -1,7 +1,7 @@
 package jobs
 
 import (
-	"go-admin/app/admin/service"
+	"mango-admin/app/admin/service"
 	"time"
 )
 

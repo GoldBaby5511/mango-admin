@@ -6,13 +6,13 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
-	"github.com/go-admin-team/go-admin-core/logger"
-	"github.com/go-admin-team/go-admin-core/sdk/api"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/response"
 	"gorm.io/gorm"
+	"mango-admin/pkg/logger"
+	"mango-admin/pkg/sdk/api"
+	"mango-admin/pkg/sdk/pkg"
+	"mango-admin/pkg/sdk/pkg/response"
 
-	"go-admin/common/service"
+	"mango-admin/common/service"
 )
 
 type Api struct {

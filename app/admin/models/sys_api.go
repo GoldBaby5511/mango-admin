@@ -9,11 +9,11 @@ import (
 	"strings"
 
 	"github.com/bitly/go-simplejson"
-	"github.com/go-admin-team/go-admin-core/sdk"
-	"github.com/go-admin-team/go-admin-core/sdk/runtime"
-	"github.com/go-admin-team/go-admin-core/storage"
+	"mango-admin/pkg/sdk"
+	"mango-admin/pkg/sdk/runtime"
+	"mango-admin/pkg/storage"
 
-	"go-admin/common/models"
+	"mango-admin/common/models"
 )
 
 type SysApi struct {

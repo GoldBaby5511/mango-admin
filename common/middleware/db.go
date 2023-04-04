@@ -2,7 +2,7 @@ package middleware
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/sdk"
+	"mango-admin/pkg/sdk"
 )
 
 func WithContextDb(c *gin.Context) {

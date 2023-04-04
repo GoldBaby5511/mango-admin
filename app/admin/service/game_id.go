@@ -2,9 +2,9 @@ package service
 
 import (
 	"errors"
-	"go-admin/app/admin/models"
-	"go-admin/app/admin/service/dto"
-	cDto "go-admin/common/dto"
+	"mango-admin/app/admin/models"
+	"mango-admin/app/admin/service/dto"
+	cDto "mango-admin/common/dto"
 	"math/rand"
 	"regexp"
 	"strconv"
@@ -12,8 +12,8 @@ import (
 	"sync"
 	"time"
 
-	log "github.com/go-admin-team/go-admin-core/logger"
-	"github.com/go-admin-team/go-admin-core/sdk/service"
+	log "mango-admin/pkg/logger"
+	"mango-admin/pkg/sdk/service"
 )
 
 const (

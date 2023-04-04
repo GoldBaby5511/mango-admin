@@ -1,6 +1,6 @@
 FROM alpine
 
-COPY ./go-admin /
+COPY ./mango-admin /
 EXPOSE 8000
 
-CMD ["/go-admin","server","-c", "/config/settings.yml"]
+CMD ["/mango-admin","server","-c", "/config/settings.yml"]

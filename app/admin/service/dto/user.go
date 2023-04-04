@@ -1,8 +1,8 @@
 package dto
 
 import (
-	"go-admin/app/admin/models"
-	"go-admin/common/dto"
+	"mango-admin/app/admin/models"
+	"mango-admin/common/dto"
 )
 
 type UserListReq struct {

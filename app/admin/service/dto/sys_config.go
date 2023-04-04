@@ -1,9 +1,9 @@
 package dto
 
 import (
-	"go-admin/app/admin/models"
-	"go-admin/common/dto"
-	common "go-admin/common/models"
+	"mango-admin/app/admin/models"
+	"mango-admin/common/dto"
+	common "mango-admin/common/models"
 )
 
 // SysConfigGetPageReq 列表或者搜索使用结构体
@@ -29,7 +29,7 @@ func (m *SysConfigGetPageReq) GetNeedSearch() interface{} {
 }
 
 type SysConfigGetToSysAppReq struct {
-	IsFrontend     int    `form:"isFrontend" search:"type:exact;column:is_frontend;table:sys_config"`
+	IsFrontend int `form:"isFrontend" search:"type:exact;column:is_frontend;table:sys_config"`
 }
 
 func (m *SysConfigGetToSysAppReq) GetNeedSearch() interface{} {

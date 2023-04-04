@@ -2,19 +2,19 @@ package apis
 
 import (
 	"github.com/gin-gonic/gin/binding"
-	"github.com/go-admin-team/go-admin-core/sdk/config"
-	"go-admin/app/admin/models"
+	"mango-admin/app/admin/models"
+	"mango-admin/pkg/sdk/config"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/sdk/api"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth/user"
-	_ "github.com/go-admin-team/go-admin-core/sdk/pkg/response"
 	"github.com/google/uuid"
+	"mango-admin/pkg/sdk/api"
+	"mango-admin/pkg/sdk/pkg/jwtauth/user"
+	_ "mango-admin/pkg/sdk/pkg/response"
 
-	"go-admin/app/admin/service"
-	"go-admin/app/admin/service/dto"
-	"go-admin/common/actions"
+	"mango-admin/app/admin/service"
+	"mango-admin/app/admin/service/dto"
+	"mango-admin/common/actions"
 )
 
 type SysUser struct {

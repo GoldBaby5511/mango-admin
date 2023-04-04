@@ -1,20 +1,20 @@
 package router
 
 import (
-	"go-admin/app/admin/apis"
+	"mango-admin/app/admin/apis"
 	"mime"
 
-	"github.com/go-admin-team/go-admin-core/sdk/config"
+	"mango-admin/pkg/sdk/config"
 
 	"github.com/gin-gonic/gin"
-	jwt "github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/ws"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
+	jwt "mango-admin/pkg/sdk/pkg/jwtauth"
+	"mango-admin/pkg/sdk/pkg/ws"
 
-	"go-admin/common/middleware"
-	"go-admin/common/middleware/handler"
-	_ "go-admin/docs"
+	"mango-admin/common/middleware"
+	"mango-admin/common/middleware/handler"
+	_ "mango-admin/docs"
 )
 
 func InitSysRouter(r *gin.Engine, authMiddleware *jwt.GinJWTMiddleware) *gin.RouterGroup {

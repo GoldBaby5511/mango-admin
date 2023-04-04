@@ -3,12 +3,12 @@
 */.DS_Store
 static/uploadfile
 main.exe
-go-admin
+mango-admin
 temp/
 !temp
 vendor
 config/settings.dev.yml
-go-admin
+mango-admin
 tempapp
 mango-admin
 common/middleware/demo.go

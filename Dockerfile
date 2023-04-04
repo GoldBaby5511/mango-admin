@@ -13,14 +13,14 @@ RUN go mod tidy
 COPY . .
 RUN pwd && ls
 
-RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-w -s" -a -installsuffix cgo -o go-admin .
+RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-w -s" -a -installsuffix cgo -o mango-admin .
 
 FROM alpine
 
-COPY --from=builder /go/release/go-admin /
+COPY --from=builder /go/release/mango-admin /
 
 COPY --from=builder /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 
 EXPOSE 8000
 
-CMD ["/go-admin","server","-c", "/config/settings.yml"]
+CMD ["/mango-admin","server","-c", "/config/settings.yml"]

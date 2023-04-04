@@ -2,8 +2,8 @@ package apis
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/sdk/api"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/captcha"
+	"mango-admin/pkg/sdk/api"
+	"mango-admin/pkg/sdk/pkg/captcha"
 )
 
 type System struct {

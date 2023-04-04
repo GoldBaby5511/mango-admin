@@ -1,7 +1,7 @@
 package models
 
 import (
-	"github.com/go-admin-team/go-admin-core/sdk"
+	"mango-admin/pkg/sdk"
 	"gorm.io/gorm"
 )
 

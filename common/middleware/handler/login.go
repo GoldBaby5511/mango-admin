@@ -1,9 +1,9 @@
 package handler
 
 import (
-	log "github.com/go-admin-team/go-admin-core/logger"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
 	"gorm.io/gorm"
+	log "mango-admin/pkg/logger"
+	"mango-admin/pkg/sdk/pkg"
 )
 
 type Login struct {

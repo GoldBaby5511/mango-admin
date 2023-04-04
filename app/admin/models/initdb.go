@@ -2,10 +2,10 @@ package models
 
 import (
 	"fmt"
-	"go-admin/common/global"
 	"gorm.io/gorm"
 	"io/ioutil"
 	"log"
+	"mango-admin/common/global"
 	"strings"
 )
 

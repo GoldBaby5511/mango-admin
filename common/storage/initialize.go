@@ -10,9 +10,9 @@ package storage
 import (
 	"log"
 
-	"github.com/go-admin-team/go-admin-core/sdk"
-	"github.com/go-admin-team/go-admin-core/sdk/config"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/captcha"
+	"mango-admin/pkg/sdk"
+	"mango-admin/pkg/sdk/config"
+	"mango-admin/pkg/sdk/pkg/captcha"
 )
 
 // Setup 配置storage组件

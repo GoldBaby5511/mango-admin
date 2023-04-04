@@ -1,9 +1,9 @@
 package dto
 
 import (
-	"github.com/go-admin-team/go-admin-core/tools/search"
-	"go-admin/common/global"
+	"mango-admin/pkg/tools/search"
 	"gorm.io/gorm"
+	"mango-admin/common/global"
 )
 
 type GeneralDelDto struct {

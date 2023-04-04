@@ -2,17 +2,17 @@ package service
 
 import (
 	"errors"
-	"go-admin/app/admin/models"
+	"mango-admin/app/admin/models"
 
-	log "github.com/go-admin-team/go-admin-core/logger"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
+	log "mango-admin/pkg/logger"
+	"mango-admin/pkg/sdk/pkg"
 
 	"gorm.io/gorm"
 
-	"go-admin/app/admin/service/dto"
-	cDto "go-admin/common/dto"
+	"mango-admin/app/admin/service/dto"
+	cDto "mango-admin/common/dto"
 
-	"github.com/go-admin-team/go-admin-core/sdk/service"
+	"mango-admin/pkg/sdk/service"
 )
 
 type SysDept struct {

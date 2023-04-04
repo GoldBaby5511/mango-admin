@@ -7,19 +7,19 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/go-admin-team/go-admin-core/sdk"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
+	"mango-admin/pkg/sdk"
+	"mango-admin/pkg/sdk/pkg"
 
-	"github.com/go-admin-team/go-admin-core/config/source/file"
+	"mango-admin/pkg/config/source/file"
 	"github.com/spf13/cobra"
 
-	"go-admin/cmd/migrate/migration"
-	_ "go-admin/cmd/migrate/migration/version"
-	_ "go-admin/cmd/migrate/migration/version-local"
-	"go-admin/common/database"
-	"go-admin/common/models"
+	"mango-admin/cmd/migrate/migration"
+	_ "mango-admin/cmd/migrate/migration/version"
+	_ "mango-admin/cmd/migrate/migration/version-local"
+	"mango-admin/common/database"
+	"mango-admin/common/models"
 
-	"github.com/go-admin-team/go-admin-core/sdk/config"
+	"mango-admin/pkg/sdk/config"
 )
 
 var (
@@ -30,7 +30,7 @@ var (
 	StartCmd  = &cobra.Command{
 		Use:     "migrate",
 		Short:   "Initialize the database",
-		Example: "go-admin migrate -c config/settings.yml",
+		Example: "mango-admin migrate -c config/settings.yml",
 		Run: func(cmd *cobra.Command, args []string) {
 			run()
 		},
@@ -41,7 +41,7 @@ var (
 func init() {
 	StartCmd.PersistentFlags().StringVarP(&configYml, "config", "c", "config/settings.yml", "Start server with provided configuration file")
 	StartCmd.PersistentFlags().BoolVarP(&generate, "generate", "g", false, "generate migration file")
-	StartCmd.PersistentFlags().BoolVarP(&goAdmin, "goAdmin", "a", false, "generate go-admin migration file")
+	StartCmd.PersistentFlags().BoolVarP(&goAdmin, "goAdmin", "a", false, "generate mango-admin migration file")
 	StartCmd.PersistentFlags().StringVarP(&host, "domain", "d", "*", "select tenant host")
 }
 

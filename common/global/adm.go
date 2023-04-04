@@ -1,7 +1,7 @@
 package global
 
 const (
-	// Version go-admin version info
+	// Version mango-admin version info
 	Version = "2.0.10"
 )
 

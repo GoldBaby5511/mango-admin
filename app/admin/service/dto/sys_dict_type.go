@@ -1,10 +1,10 @@
 package dto
 
 import (
-	"go-admin/app/admin/models"
+	"mango-admin/app/admin/models"
 
-	"go-admin/common/dto"
-	common "go-admin/common/models"
+	"mango-admin/common/dto"
+	common "mango-admin/common/models"
 )
 
 type SysDictTypeGetPageReq struct {

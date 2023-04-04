@@ -2,15 +2,15 @@ package service
 
 import (
 	"errors"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
 	"gorm.io/gorm"
+	"mango-admin/pkg/sdk/pkg"
 
-	"go-admin/app/admin/models"
-	"go-admin/app/admin/service/dto"
-	cDto "go-admin/common/dto"
-	cModels "go-admin/common/models"
+	"mango-admin/app/admin/models"
+	"mango-admin/app/admin/service/dto"
+	cDto "mango-admin/common/dto"
+	cModels "mango-admin/common/models"
 
-	"github.com/go-admin-team/go-admin-core/sdk/service"
+	"mango-admin/pkg/sdk/service"
 )
 
 type SysMenu struct {
@@ -331,7 +331,7 @@ func (e *SysMenu) getByRoleName(roleName string) ([]models.SysMenu, error) {
 		MenuList = data
 	} else {
 		role.RoleKey = roleName
-		buttons := make([]models.SysMenu,0)
+		buttons := make([]models.SysMenu, 0)
 		err = e.Orm.Debug().Model(&role).Where("role_key = ? ", roleName).Preload("SysMenu", func(db *gorm.DB) *gorm.DB {
 			return db.Where(" menu_type in ('F')").Order("sort")
 		}).Find(&role).Error

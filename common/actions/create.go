@@ -4,13 +4,13 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/sdk/api"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth/user"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/response"
+	"mango-admin/pkg/sdk/api"
+	"mango-admin/pkg/sdk/pkg"
+	"mango-admin/pkg/sdk/pkg/jwtauth/user"
+	"mango-admin/pkg/sdk/pkg/response"
 
-	"go-admin/common/dto"
-	"go-admin/common/models"
+	"mango-admin/common/dto"
+	"mango-admin/common/models"
 )
 
 // CreateAction 通用新增动作

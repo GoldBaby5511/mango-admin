@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/go-admin-team/go-admin-core/config/source/file"
 	"github.com/spf13/cobra"
+	"mango-admin/pkg/config/source/file"
 
-	"github.com/go-admin-team/go-admin-core/sdk/config"
+	"mango-admin/pkg/sdk/config"
 )
 
 var (
@@ -15,7 +15,7 @@ var (
 	StartCmd  = &cobra.Command{
 		Use:     "config",
 		Short:   "Get Application config info",
-		Example: "go-admin config -c config/settings.yml",
+		Example: "mango-admin config -c config/settings.yml",
 		Run: func(cmd *cobra.Command, args []string) {
 			run()
 		},

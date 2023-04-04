@@ -4,13 +4,13 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	log "github.com/go-admin-team/go-admin-core/logger"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth/user"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/response"
+	log "mango-admin/pkg/logger"
+	"mango-admin/pkg/sdk/pkg"
+	"mango-admin/pkg/sdk/pkg/jwtauth/user"
+	"mango-admin/pkg/sdk/pkg/response"
 
-	"go-admin/common/dto"
-	"go-admin/common/models"
+	"mango-admin/common/dto"
+	"mango-admin/common/models"
 )
 
 // UpdateAction 通用更新动作

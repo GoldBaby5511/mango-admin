@@ -5,8 +5,8 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"go-admin/common"
-	gaConfig "go-admin/config"
+	"mango-admin/common"
+	gaConfig "mango-admin/config"
 	"io"
 	"io/ioutil"
 	"net/http"
@@ -14,13 +14,13 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/sdk"
-	"github.com/go-admin-team/go-admin-core/sdk/api"
-	"github.com/go-admin-team/go-admin-core/sdk/config"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth/user"
+	"mango-admin/pkg/sdk"
+	"mango-admin/pkg/sdk/api"
+	"mango-admin/pkg/sdk/config"
+	"mango-admin/pkg/sdk/pkg"
+	"mango-admin/pkg/sdk/pkg/jwtauth/user"
 
-	"go-admin/common/global"
+	"mango-admin/common/global"
 )
 
 // LoggerToFile 日志记录到文件

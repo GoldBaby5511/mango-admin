@@ -1,18 +1,18 @@
 package apis
 
 import (
-	"go-admin/app/admin/models"
-	"go-admin/app/admin/service"
-	"go-admin/app/admin/service/dto"
 	"io"
+	"mango-admin/app/admin/models"
+	"mango-admin/app/admin/service"
+	"mango-admin/app/admin/service/dto"
 	"net/http"
 	"strconv"
 
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
-	"github.com/go-admin-team/go-admin-core/sdk"
-	"github.com/go-admin-team/go-admin-core/sdk/api"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth/user"
+	"mango-admin/pkg/sdk"
+	"mango-admin/pkg/sdk/api"
+	"mango-admin/pkg/sdk/pkg/jwtauth/user"
 )
 
 type GameServerApi struct {

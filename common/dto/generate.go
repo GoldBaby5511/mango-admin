@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/sdk/api"
+	"mango-admin/pkg/sdk/api"
 )
 
 type ObjectById struct {

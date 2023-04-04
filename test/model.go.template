@@ -1,8 +1,8 @@
 package models
 
 import (
-orm "go-admin/global"
-"go-admin/utils"
+orm "mango-admin/global"
+"mango-admin/utils"
 "time"
 )
 

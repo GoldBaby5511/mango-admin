@@ -3,13 +3,13 @@ package service
 import (
 	"errors"
 
-    "github.com/go-admin-team/go-admin-core/sdk/service"
+    "mango-admin/pkg/sdk/service"
 	"gorm.io/gorm"
 
-	"go-admin/app/{{.PackageName}}/models"
-	"go-admin/app/{{.PackageName}}/service/dto"
-	"go-admin/common/actions"
-	cDto "go-admin/common/dto"
+	"mango-admin/app/{{.PackageName}}/models"
+	"mango-admin/app/{{.PackageName}}/service/dto"
+	"mango-admin/common/actions"
+	cDto "mango-admin/common/dto"
 )
 
 type {{.ClassName}} struct {

@@ -2,11 +2,11 @@ package dto
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/sdk/api"
-	"go-admin/app/jobs/models"
+	"mango-admin/app/jobs/models"
+	"mango-admin/pkg/sdk/api"
 
-	"go-admin/common/dto"
-	common "go-admin/common/models"
+	"mango-admin/common/dto"
+	common "mango-admin/common/models"
 )
 
 type SysJobSearch struct {

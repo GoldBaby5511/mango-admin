@@ -1,14 +1,14 @@
 package models
 
 import (
-	"github.com/go-admin-team/go-admin-core/sdk"
+	"mango-admin/pkg/sdk"
 	"gorm.io/gorm"
 )
 
 var (
-	UserAccountPtr  *UserAccount
-	UserLoginPtr    *UserLogin
-	UserOnlinePtr   *UserOnline
+	UserAccountPtr *UserAccount
+	UserLoginPtr   *UserLogin
+	UserOnlinePtr  *UserOnline
 )
 
 func userdb() *gorm.DB {

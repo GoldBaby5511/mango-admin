@@ -3,14 +3,14 @@ package apis
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
-	"github.com/go-admin-team/go-admin-core/sdk/api"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth/user"
-	_ "github.com/go-admin-team/go-admin-core/sdk/pkg/response"
-	"go-admin/app/admin/models"
+	"mango-admin/app/admin/models"
+	"mango-admin/pkg/sdk/api"
+	"mango-admin/pkg/sdk/pkg"
+	"mango-admin/pkg/sdk/pkg/jwtauth/user"
+	_ "mango-admin/pkg/sdk/pkg/response"
 
-	"go-admin/app/admin/service"
-	"go-admin/app/admin/service/dto"
+	"mango-admin/app/admin/service"
+	"mango-admin/app/admin/service/dto"
 )
 
 type SysDept struct {
@@ -187,7 +187,7 @@ func (e SysDept) Get2Tree(c *gin.Context) {
 	req := dto.SysDeptGetPageReq{}
 	err := e.MakeContext(c).
 		MakeOrm().
-		Bind(&req,binding.Form).
+		Bind(&req, binding.Form).
 		MakeService(&s.Service).
 		Errors
 	if err != nil {

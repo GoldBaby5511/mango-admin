@@ -2,16 +2,16 @@ package service
 
 import (
 	"errors"
-	"go-admin/app/admin/models"
-	"go-admin/app/admin/service/dto"
+	"mango-admin/app/admin/models"
+	"mango-admin/app/admin/service/dto"
 
-	log "github.com/go-admin-team/go-admin-core/logger"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
-	"github.com/go-admin-team/go-admin-core/sdk/service"
 	"gorm.io/gorm"
+	log "mango-admin/pkg/logger"
+	"mango-admin/pkg/sdk/pkg"
+	"mango-admin/pkg/sdk/service"
 
-	"go-admin/common/actions"
-	cDto "go-admin/common/dto"
+	"mango-admin/common/actions"
+	cDto "mango-admin/common/dto"
 )
 
 type SysUser struct {

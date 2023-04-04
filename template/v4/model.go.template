@@ -16,7 +16,7 @@ import (
      "time"
      {{- end }}
 
-	"go-admin/common/models"
+	"mango-admin/common/models"
 
 )
 

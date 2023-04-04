@@ -21,7 +21,7 @@ var doc = `{
         "contact": {},
         "license": {
             "name": "MIT",
-            "url": "https://github.com/go-admin-team/go-admin/blob/master/LICENSE.md"
+            "url": "https://github.com/mango-admin-team/mango-admin/blob/master/LICENSE.md"
         },
         "version": "{{.Version}}"
     },
@@ -4068,7 +4068,7 @@ var SwaggerInfo = swaggerInfo{
 	Host:        "",
 	BasePath:    "",
 	Schemes:     []string{},
-	Title:       "go-admin API",
+	Title:       "mango-admin API",
 	Description: "基于Gin + Vue + Element UI的前后端分离权限管理系统的接口文档\n添加qq群: 521386980 进入技术交流群 请先star，谢谢！",
 }
 

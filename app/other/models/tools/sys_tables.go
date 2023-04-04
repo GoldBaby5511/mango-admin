@@ -1,12 +1,12 @@
 package tools
 
 import (
-	common "go-admin/common/models"
+	common "mango-admin/common/models"
 	"strings"
 
 	"gorm.io/gorm"
 
-	"go-admin/app/admin/models"
+	"mango-admin/app/admin/models"
 )
 
 type SysTables struct {

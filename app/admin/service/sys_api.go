@@ -4,14 +4,14 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/go-admin-team/go-admin-core/sdk/runtime"
-	"github.com/go-admin-team/go-admin-core/sdk/service"
 	"gorm.io/gorm"
+	"mango-admin/pkg/sdk/runtime"
+	"mango-admin/pkg/sdk/service"
 
-	"go-admin/app/admin/models"
-	"go-admin/app/admin/service/dto"
-	"go-admin/common/actions"
-	cDto "go-admin/common/dto"
+	"mango-admin/app/admin/models"
+	"mango-admin/app/admin/service/dto"
+	"mango-admin/common/actions"
+	cDto "mango-admin/common/dto"
 )
 
 type SysApi struct {

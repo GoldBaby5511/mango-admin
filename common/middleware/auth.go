@@ -3,9 +3,9 @@ package middleware
 import (
 	"time"
 
-	"github.com/go-admin-team/go-admin-core/sdk/config"
-	jwt "github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth"
-	"go-admin/common/middleware/handler"
+	"mango-admin/common/middleware/handler"
+	"mango-admin/pkg/sdk/config"
+	jwt "mango-admin/pkg/sdk/pkg/jwtauth"
 )
 
 // AuthInit jwt验证new

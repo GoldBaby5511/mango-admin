@@ -1,11 +1,11 @@
 package apis
 
 import (
-	"go-admin/app/admin/service"
-	"go-admin/app/admin/service/dto"
+	"mango-admin/app/admin/service"
+	"mango-admin/app/admin/service/dto"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/response"
+	"mango-admin/pkg/sdk/pkg/response"
 )
 
 type User struct {

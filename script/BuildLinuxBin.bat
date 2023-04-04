@@ -6,4 +6,4 @@
 @set GOOS=linux
 @go build
 
-move go-admin ../forestAdminBin/server
+move mango-admin ../forestAdminBin/server

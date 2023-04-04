@@ -1,10 +1,10 @@
 package models
 
 import (
-	"go-admin/common/models"
+	"mango-admin/common/models"
 
-	"github.com/go-admin-team/go-admin-core/sdk"
 	"gorm.io/gorm"
+	"mango-admin/pkg/sdk"
 )
 
 var (

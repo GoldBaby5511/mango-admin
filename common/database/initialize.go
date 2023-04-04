@@ -7,19 +7,19 @@ import (
 	"strings"
 	"time"
 
-	log "github.com/go-admin-team/go-admin-core/logger"
-	"github.com/go-admin-team/go-admin-core/sdk"
-	toolsConfig "github.com/go-admin-team/go-admin-core/sdk/config"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
-	mycasbin "github.com/go-admin-team/go-admin-core/sdk/pkg/casbin"
-	toolsDB "github.com/go-admin-team/go-admin-core/tools/database"
+	log "mango-admin/pkg/logger"
+	"mango-admin/pkg/sdk"
+	toolsConfig "mango-admin/pkg/sdk/config"
+	"mango-admin/pkg/sdk/pkg"
+	mycasbin "mango-admin/pkg/sdk/pkg/casbin"
+	toolsDB "mango-admin/pkg/tools/database"
 
-	// . "github.com/go-admin-team/go-admin-core/tools/gorm/logger"
+	// . "mango-admin/pkg/tools/gorm/logger"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 	"gorm.io/gorm/schema"
 
-	"go-admin/common/global"
+	"mango-admin/common/global"
 )
 
 // Setup 配置数据库

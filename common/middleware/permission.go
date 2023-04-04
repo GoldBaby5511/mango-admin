@@ -5,10 +5,10 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/sdk"
-	"github.com/go-admin-team/go-admin-core/sdk/api"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg/response"
+	"mango-admin/pkg/sdk"
+	"mango-admin/pkg/sdk/api"
+	"mango-admin/pkg/sdk/pkg/jwtauth"
+	"mango-admin/pkg/sdk/pkg/response"
 )
 
 // AuthCheckRole 权限检查中间件

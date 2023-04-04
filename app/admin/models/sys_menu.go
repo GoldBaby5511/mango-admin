@@ -1,6 +1,6 @@
 package models
 
-import "go-admin/common/models"
+import "mango-admin/common/models"
 
 type SysMenu struct {
 	MenuId     int       `json:"menuId" gorm:"primaryKey;autoIncrement"`

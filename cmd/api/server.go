@@ -10,23 +10,23 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/config/source/file"
-	"github.com/go-admin-team/go-admin-core/sdk"
-	"github.com/go-admin-team/go-admin-core/sdk/api"
-	"github.com/go-admin-team/go-admin-core/sdk/config"
-	"github.com/go-admin-team/go-admin-core/sdk/pkg"
-	"github.com/go-admin-team/go-admin-core/sdk/runtime"
+	"mango-admin/pkg/config/source/file"
+	"mango-admin/pkg/sdk"
+	"mango-admin/pkg/sdk/api"
+	"mango-admin/pkg/sdk/config"
+	"mango-admin/pkg/sdk/pkg"
+	"mango-admin/pkg/sdk/runtime"
 	"github.com/spf13/cobra"
 
-	"go-admin/app/admin/models"
-	"go-admin/app/admin/router"
-	"go-admin/app/jobs"
-	"go-admin/common/database"
-	"go-admin/common/global"
-	common "go-admin/common/middleware"
-	"go-admin/common/middleware/handler"
-	"go-admin/common/storage"
-	ext "go-admin/config"
+	"mango-admin/app/admin/models"
+	"mango-admin/app/admin/router"
+	"mango-admin/app/jobs"
+	"mango-admin/common/database"
+	"mango-admin/common/global"
+	common "mango-admin/common/middleware"
+	"mango-admin/common/middleware/handler"
+	"mango-admin/common/storage"
+	ext "mango-admin/config"
 )
 
 var (
@@ -35,7 +35,7 @@ var (
 	StartCmd  = &cobra.Command{
 		Use:          "server",
 		Short:        "Start API server",
-		Example:      "go-admin server -c config/settings.yml",
+		Example:      "mango-admin server -c config/settings.yml",
 		SilenceUsage: true,
 		PreRun: func(cmd *cobra.Command, args []string) {
 			setup()
@@ -154,7 +154,7 @@ func run() error {
 var Router runtime.Router
 
 func tip() {
-	usageStr := `欢迎使用 ` + pkg.Green(`go-admin `+global.Version) + ` 可以使用 ` + pkg.Red(`-h`) + ` 查看命令`
+	usageStr := `欢迎使用 ` + pkg.Green(`mango-admin `+global.Version) + ` 可以使用 ` + pkg.Red(`-h`) + ` 查看命令`
 	fmt.Printf("%s \n\n", usageStr)
 }
 

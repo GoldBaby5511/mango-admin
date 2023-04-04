@@ -1,11 +1,11 @@
 package middleware
 
 import (
-	"go-admin/common/actions"
+	"mango-admin/common/actions"
 
 	"github.com/gin-gonic/gin"
-	"github.com/go-admin-team/go-admin-core/sdk"
-	jwt "github.com/go-admin-team/go-admin-core/sdk/pkg/jwtauth"
+	"mango-admin/pkg/sdk"
+	jwt "mango-admin/pkg/sdk/pkg/jwtauth"
 )
 
 const (
