@@ -11,7 +11,6 @@ require (
 	github.com/bytedance/go-tagexpr/v2 v2.7.12
 	github.com/casbin/casbin/v2 v2.25.1
 	github.com/gin-gonic/gin v1.7.3
-	github.com/go-admin-team/go-admin-core v1.3.8
 	github.com/google/uuid v1.2.0
 	github.com/huaweicloud/huaweicloud-sdk-go-obs v3.21.12+incompatible
 	github.com/mssola/user_agent v0.5.2

@@ -7,11 +7,11 @@ import (
 	"text/template"
 	"time"
 
-	"mango-admin/pkg/sdk"
 	"mango-admin/pkg"
+	"mango-admin/pkg/sdk"
 
-	"mango-admin/pkg/config/source/file"
 	"github.com/spf13/cobra"
+	"mango-admin/pkg/config/source/file"
 
 	"mango-admin/cmd/migrate/migration"
 	_ "mango-admin/cmd/migrate/migration/version"
@@ -61,8 +61,9 @@ func run() {
 }
 
 func migrateModel() error {
-	if host == "" {
-		host = "*"
+	host = "default"
+	for d := range config.DatabasesConfig {
+		fmt.Println(d)
 	}
 	db := sdk.Runtime.GetDbByKey("default")
 	if config.DatabasesConfig[host].Driver == "mysql" {
@@ -82,7 +83,7 @@ func initDB() {
 	database.Setup()
 	//4. 数据库迁移
 	fmt.Println("数据库迁移开始")
-	// _ = migrateModel()
+	_ = migrateModel()
 	fmt.Println(`数据库基础数据初始化成功`)
 }
 

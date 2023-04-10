@@ -74,6 +74,10 @@ func setupSimpleDatabase(host string, c *toolsConfig.Database) *gorm.DB {
 }
 
 func SetLogger(db *gorm.DB, LogPath string, SlowThresholdMs int) {
+	if db == nil {
+		log.Fatal("db == nil")
+		return
+	}
 	var writer io.Writer = os.Stdout
 	if LogPath != "" && LogPath != "default" {
 		logFile := strings.TrimSuffix(LogPath, "/") + "/sql.log"
