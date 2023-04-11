@@ -124,8 +124,8 @@ INSERT INTO sys_api VALUES (159, 'github.com/gin-gonic/gin.(*RouterGroup).create
 INSERT INTO sys_config VALUES (1, '皮肤样式', 'sys_index_skinName', 'skin-green', 'Y', '0', '主框架页-默认皮肤样式名称:蓝色 skin-blue、绿色 skin-green、紫色 skin-purple、红色 skin-red、黄色 skin-yellow', 1, 1, '2021-05-13 19:56:37.913', '2021-06-05 13:50:13.123', NULL);
 INSERT INTO sys_config VALUES (2, '初始密码', 'sys_user_initPassword', '123456', 'Y', '0', '用户管理-账号初始密码:123456', 1, 1, '2021-05-13 19:56:37.913', '2021-05-13 19:56:37.913', NULL);
 INSERT INTO sys_config VALUES (3, '侧栏主题', 'sys_index_sideTheme', 'theme-dark', 'Y', '0', '主框架页-侧边栏主题:深色主题theme-dark，浅色主题theme-light', 1, 1, '2021-05-13 19:56:37.913', '2021-05-13 19:56:37.913', NULL);
-INSERT INTO sys_config VALUES (4, '系统名称', 'sys_app_name', 'go-admin管理系统', 'Y', '1', '', 1, 0, '2021-03-17 08:52:06.067', '2021-05-28 10:08:25.248', NULL);
-INSERT INTO sys_config VALUES (5, '系统logo', 'sys_app_logo', 'https://gitee.com/mydearzwj/image/raw/master/img/mango-admin.png', 'Y', '1', '', 1, 0, '2021-03-17 08:53:19.462', '2021-03-17 08:53:19.462', NULL);
+INSERT INTO sys_config VALUES (4, '系统名称', 'sys_app_name', 'mango-admin', 'Y', '1', '', 1, 0, '2021-03-17 08:52:06.067', '2021-05-28 10:08:25.248', NULL);
+INSERT INTO sys_config VALUES (5, '系统logo', 'sys_app_logo', 'https://raw.githubusercontent.com/GoldBaby5511/blog-img/main/mango.png', 'Y', '1', '', 1, 0, '2021-03-17 08:53:19.462', '2021-03-17 08:53:19.462', NULL);
 
 INSERT INTO sys_dept VALUES (1, 0, '/0/1/', '爱拓科技', 0, 'aituo', '13782218188', 'atuo@aituo.com', '2', 1, 1, '2021-05-13 19:56:37.913', '2021-06-05 17:06:44.960', NULL);
 INSERT INTO sys_dept VALUES (7, 1, '/0/1/7/', '研发部', 1, 'aituo', '13782218188', 'atuo@aituo.com', '2', 1, 1, '2021-05-13 19:56:37.913', '2021-06-16 21:35:00.109', NULL);
