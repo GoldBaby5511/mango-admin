@@ -38,7 +38,7 @@ func sysBaseRouter(r *gin.RouterGroup) {
 	go ws.WebsocketManager.SendAllService()
 
 	if config.ApplicationConfig.Mode != "prod" {
-		r.GET("/", apis.GoAdmin)
+		r.GET("/", apis.MangoAdmin)
 	}
 	r.GET("/info", handler.Ping)
 }

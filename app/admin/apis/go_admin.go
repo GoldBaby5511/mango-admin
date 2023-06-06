@@ -9,7 +9,7 @@ const INDEX = `
 <html>
 <head>
 <meta charset="utf-8">
-<title>GO-ADMIN欢迎您</title>
+<title>MANGO-ADMIN欢迎您</title>
 <style>
 body{
   margin:0; 
@@ -33,7 +33,7 @@ $(function(){
 </html>
 `
 
-func GoAdmin(c *gin.Context) {
+func MangoAdmin(c *gin.Context) {
 	c.Header("Content-Type", "text/html; charset=utf-8")
 	c.String(200, INDEX)
 }

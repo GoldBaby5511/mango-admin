@@ -1,6 +1,7 @@
 package response
 
 import (
+	"fmt"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
@@ -18,6 +19,10 @@ func Error(c *gin.Context, code int, err error, msg string) {
 	}
 	if msg != "" {
 		res.SetMsg(msg)
+	}
+	if c == nil {
+		fmt.Println("异常,c == nil")
+		return
 	}
 	res.SetTraceID(pkg.GenerateMsgIDFromContext(c))
 	res.SetCode(int32(code))

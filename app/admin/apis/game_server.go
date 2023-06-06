@@ -10,9 +10,9 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/gin-gonic/gin/binding"
+	"mango-admin/pkg/jwtauth/user"
 	"mango-admin/pkg/sdk"
 	"mango-admin/pkg/sdk/api"
-	"mango-admin/pkg/jwtauth/user"
 )
 
 type GameServerApi struct {
@@ -21,6 +21,8 @@ type GameServerApi struct {
 
 // 代理到游戏服务控制
 func (e GameServerApi) Index(c *gin.Context) {
+	//做一下绑定否则会报空指针
+	e.MakeContext(c)
 	if user.GetRoleName(c) != "admin" && user.GetRoleName(c) != "系统管理员" {
 		e.Error(403, nil, "权限不足")
 		return
