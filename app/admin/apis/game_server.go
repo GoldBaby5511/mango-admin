@@ -28,7 +28,8 @@ func (e GameServerApi) Index(c *gin.Context) {
 		return
 	}
 
-	url := "http://127.0.0.1:15052/"
+	//TODO 暂时固定
+	url := "http://127.0.0.1:10052/"
 	path := c.Param("path")
 
 	req, _ := http.NewRequest(c.Request.Method, url+path, c.Request.Body)
