@@ -54,7 +54,7 @@ func copyRequestBody(ctx *gin.Context) []byte {
 func printLog(ctx *gin.Context, bodyData []byte, start time.Time) {
 	log := api.GetRequestLogger(ctx)
 
-	apiLoger := apiLogFormat{
+	apiLogger := apiLogFormat{
 		Time:   time.Now().Format("2006-01-02 15:04:05"),
 		Cost:   time.Since(start).Milliseconds(),
 		Path:   ctx.Request.URL.Path,
@@ -64,13 +64,13 @@ func printLog(ctx *gin.Context, bodyData []byte, start time.Time) {
 	}
 
 	if len(bodyData) > 0 && bodyData[0] == '{' {
-		apiLoger.BodyJson = bodyData
+		apiLogger.BodyJson = bodyData
 	} else {
-		apiLoger.BodyString, _ = url.QueryUnescape(string(bodyData))
+		apiLogger.BodyString, _ = url.QueryUnescape(string(bodyData))
 	}
 
-	if apiLoger.Cost > slowMilliseconds {
-		apiLoger.Slow = true
+	if apiLogger.Cost > slowMilliseconds {
+		apiLogger.Slow = true
 	}
 
 	rt, bl := ctx.Get("result")
@@ -79,11 +79,11 @@ func printLog(ctx *gin.Context, bodyData []byte, start time.Time) {
 		if err != nil {
 			log.Warnf("json Marshal result error, %s", err.Error())
 		} else {
-			apiLoger.Response = rb
+			apiLogger.Response = rb
 		}
 	}
 
-	b, err := json.Marshal(apiLoger)
+	b, err := json.Marshal(apiLogger)
 	if err != nil {
 		log.Error(err)
 		return
